@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 13:43:03 by rbogoudi          #+#    #+#             */
-/*   Updated: 2024/08/12 12:48:52 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2024/08/12 19:36:39 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int main(int argc, char **argv)
         if (stack_length(a) == 2)
             sa(&a, false);
         else if (stack_len(a) == 3)
-            tiny_sort(&a);
+            sort_sort(&a);
         else
             push_swap(&a, &b);    
     }
