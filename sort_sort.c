@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/12 19:37:20 by rbogoudi          #+#    #+#             */
-/*   Updated: 2024/08/14 20:04:10 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2024/08/15 11:58:52 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ static t_stack_node	*find_highest(t_stack_node *stack)
 {
 	int				highest;
 	t_stack_node	*highest_node;
+
+	highest_node = NULL;
 
 	if (stack == NULL)
 		return (NULL);
