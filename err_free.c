@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/12 11:43:40 by rbogoudi          #+#    #+#             */
-/*   Updated: 2024/08/16 14:25:56 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2024/08/16 22:08:20 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,6 @@ void	err_free(t_stack_node **a, char **argv, bool flag_argc_2)
 // Syntax errors checker
 int	err_syntax(char *str_num)
 {
-	printf("err_syntax");
-	while (*str_num == ' ')
-		str_num++;
-	if (*str_num == '\0')
-		return (1);
 	if (!(*str_num == '+' || *str_num == '-' || (*str_num >= '0'
 				&& *str_num <= '9')))
 		return (1);

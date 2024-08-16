@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/06 20:34:09 by rbogoudi          #+#    #+#             */
-/*   Updated: 2024/08/16 12:46:53 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2024/08/16 22:09:53 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ void	stack_init(t_stack_node **a, char **argv, bool flag_argc_2)
 	{
 		if (err_syntax(argv[i]))
 		{
-			printf("9\n");
 			err_free(a, argv, flag_argc_2);
 		}
 		num = ft_tolong(argv[i]);
