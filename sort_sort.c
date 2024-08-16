@@ -32,7 +32,6 @@ static t_stack_node	*find_highest(t_stack_node *stack)
 	t_stack_node	*highest_node;
 
 	highest_node = NULL;
-
 	if (stack == NULL)
 		return (NULL);
 	highest = INT_MIN;

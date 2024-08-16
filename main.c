@@ -6,7 +6,7 @@
 /*   By: rbogoudi <rbogoudi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 13:43:03 by rbogoudi          #+#    #+#             */
-/*   Updated: 2024/08/14 20:12:07 by rbogoudi         ###   ########.fr       */
+/*   Updated: 2024/08/16 12:58:03 by rbogoudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,10 @@ int	main(int argc, char **argv)
 	a = NULL;
 	b = NULL;
 	if (argc == 1 || (argc == 2 && !argv[1][0]))
+	{
+		write(2, "Error\n", 6);
 		return (1);
+	}
 	else if (argc == 2)
 		argv = ft_split(argv[1], ' ');
 	stack_init(&a, argv + 1, argc == 2);
