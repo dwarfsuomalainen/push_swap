@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "*.embeddedhtml": "html",
-        "*.erd": "json",
-        "*.vuerd": "json",
-        "push_swap.h": "c",
-        "libft.h": "c"
-    }
-}
